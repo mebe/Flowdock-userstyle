@@ -1,0 +1,302 @@
+.content {
+  min-height: 0 !important;
+  font-family: Arial !important;
+}
+
+.normal-icon::before {
+  font-size: 1em !important;
+  line-height: 1em !important;
+  width: 16px !important;
+}
+
+.avatar .type-icon, 
+.user-menu-avatar .type-icon, 
+.single-message-avatar .type-icon {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+.avatar .type-icon::before, 
+.user-menu-avatar .type-icon::before, 
+.single-message-avatar .type-icon::before {
+  font-size: 10px !important;
+  line-height: normal !important;
+} 
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  vertical-align: baseline !important;
+}
+
+.dropdown-indicator, #more {
+  padding: 1em 1px !important;
+}
+
+.chat-message-list, .inbox-message-list {
+  top: 3.5em !important;
+}
+
+.toolbar, 
+.inbox-toolbar, 
+.chat-toolbar, 
+.single-view-toolbar {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  height: 46px !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+.chat-toolbar > ul.online {
+  height: 26px !important;
+}
+
+.single-view-toolbar-actions li .toolbar-button {
+  vertical-align: top !important;
+}
+
+.toolbar-button {
+  height: 2em !important;
+  padding: 0.3em !important;
+}
+
+.toolbar-button.icon {
+  width: 2em !important;
+}
+
+.inbox-toolbar input[type="text"], 
+.inbox-toolbar .tokenist {
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.inbox-toolbar input[type="text"].tokenist-placeholder::before, 
+.inbox-toolbar .tokenist.tokenist-placeholder::before {
+  top: 4px !important;
+  left: 5px !important;
+}
+
+#avatar-list .user-avatar, 
+#avatar-list .invitation-avatar {
+  width: 2em !important;
+  height: 2em !important;
+}
+
+.inbox-toolbar li.right {
+  height: 26px !important;
+}
+
+
+/*main chat styles*/
+
+#chat li[class*="message"] {
+  padding-top: 0.3em !important;
+  padding-bottom: 0.3em !important;
+  padding-left: 2.5em !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+}
+
+#chat li[class*="message"].external,
+#chat li[class*="message"].external .message-author {
+  opacity: 0.4 !important;
+}
+
+#chat li[class*="message"].external .content a.external {
+  text-overflow: ellipsis !important;
+  width: 170px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  display: inline-block !important;  
+}
+
+#chat li[class*="message"].external:hover {
+  opacity: 0.9 !important;
+  -webkit-transition: opacity 0.2s ease-in !important;  
+}
+
+#chat li[class*="message"]:last-child {
+  padding-bottom: 1.3em !important;
+}
+
+#chat li.time-separator[class*="message"] {
+  border-top-width: 1px !important;
+}
+
+#chat li.me[class*="message"] .message-author {
+  color: yellowGreen !important;
+}
+
+/*inbox styles*/
+
+#inbox #filters {
+  top: 3.615em !important;
+  padding: 0 !important;
+}
+
+#inbox .inbox-toolbar #filter-toggle {
+  width: 5em !important;
+}
+
+#inbox .inbox-toolbar .search {
+  margin-left: 5.5em !important;
+  margin-right: 2.5em !important;
+}
+
+#inbox .avatar, 
+#inbox .user-menu-avatar, 
+#inbox .single-message-avatar {
+  height: 3em !important;
+  width: 3em !important;
+  margin-right: 1em !important;
+}
+
+#inbox li[class*="message"] {
+  padding: 0.5em 0.8em !important;
+  line-height: 16px !important;
+}
+
+#inbox li[class*="message"]:first-child {
+  padding-top: 1em !important;
+}
+
+#inbox .comment-count {
+  top: -5px !important;
+  left: -5px !important;
+  font-size: 10px !important;
+  line-height: 16px !important;
+  height: 16px !important;
+  width: 16px !important;
+  border: none !important;
+}
+
+#inbox .inbox-message header, 
+#inbox .info-message header, 
+#inbox .single-message header {
+  font-size: 11px !important;
+}
+
+#inbox .inbox-message .title, 
+#inbox .info-message .title, 
+#inbox .single-message .title {
+  font-weight: normal !important;
+  font-size: 11px !important;
+}
+
+#inbox li[class*="message"] .excerpt {
+  max-height: none !important;
+}
+
+/*single message*/
+
+#single .single-view-content {
+  top: 3em !important;
+  left: 3em !important;
+  padding-right: 2.5em !important;
+}
+#single .single-message-actions {
+  right: -2em !important;
+}
+
+#single .single-message-avatar {
+  width: 3.5em !important;
+  height: 3.5em !important;
+  margin: 0 1em 1em 0 !important;
+}
+
+#single .single-message-header {
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 1em !important;
+}
+
+#single .single-message-title, 
+#single .single-message-error-title {
+  font-size: 12px !important;
+}
+
+#single .single-view-comments {
+  margin: 1em 0 !important;
+}
+
+#single.mail .body table.headers {
+  margin: 1em 0 !important;
+} 
+
+#single .inbox-comment-message,
+#single .single-message-header, 
+#single .single-message-body, 
+#single .single-view-comments {
+  padding: 0.3em 1em 0.3em 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+#single .single-message-body p {
+  margin-bottom: 1em !important;
+}  
+
+#single .single-message-body p:last-child {
+  margin: 0 !important;
+}
+
+#single .inbox-comment-message:last-child {
+  padding-bottom: 1em !important;
+}
+
+#single .comment-form {
+  left: 0 !important;
+  right: 0 !important;
+  padding: 0 0 1em !important;
+}
+
+#single .comment-form a#comment-upload-btn {
+  margin-left: 0.5em !important;
+}
+
+#single .comment-form .avatar {
+  display: none !important;
+}
+
+#single .single-view-close-button {
+  top: 3em !important;
+}
+
+#single.rss .comment-form{
+  padding: 0 1em 1em !important;
+}
+
+#inbox > .indicators .more-messages.above {
+  top: 85px !important;
+}
+
+/*user list styles*/
+
+#user-list {
+  top: 44px !important;
+  padding: 1em !important;
+}
+
+#user-list .user-avatar, 
+#user-list .invitation-avatar {
+  width: 2em !important;
+  height: 2em !important;
+}
+
+#user-list .user {
+  margin: 0 0.5em 0.5em 0 !important;
+}
+
+#user-list h4 {
+  margin: 1em 0 !important;
+  padding: 0 !important;
+}
+
+#user-list .user-name, 
+#user-list .invitation-email {
+  font-size: 1em !important;
+  line-height: 1.3em !important;
+}
+
+#user-list #invite-button {
+  margin-top: 1em !important;
+} 
