@@ -5,7 +5,7 @@ Pretty userstyle.css for Flowdock app
 
 ## Usage
 
-For using just copy userstyle.css into following folder.
+For using just copy userstyle.css into the following folder:
 
     ~/Library/Application Support/Flowdock 
 
