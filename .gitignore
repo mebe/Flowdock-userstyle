@@ -1,4 +1,8 @@
 
 *.localstorage
 
-*.db
+*.idea
+
+*.xml
+
+LocalStorage/StorageTracker.db

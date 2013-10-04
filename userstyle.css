@@ -1,9 +1,11 @@
+/*Common styles*/
+
 .content {
   min-height: 0 !important;
   font-family: Arial !important;
 }
 
-.normal-icon::before {
+.normal-icon:before {
   font-size: 1em !important;
   line-height: 1em !important;
   width: 16px !important;
@@ -16,22 +18,19 @@
   height: 13px !important;
 }
 
-.avatar .type-icon::before, 
-.user-menu-avatar .type-icon::before, 
-.single-message-avatar .type-icon::before {
+.avatar .type-icon:before,
+.user-menu-avatar .type-icon:before,
+.single-message-avatar .type-icon:before {
   font-size: 10px !important;
   line-height: normal !important;
 } 
-
-[class^="icon-"]::before, [class*=" icon-"]::before {
-  vertical-align: baseline !important;
-}
 
 .dropdown-indicator, #more {
   padding: 1em 1px !important;
 }
 
-.chat-message-list, .inbox-message-list {
+.chat-message-list,
+.inbox-message-list {
   top: 3.5em !important;
 }
 
@@ -69,23 +68,48 @@
   padding-bottom: 0.2em !important;
 }
 
-.inbox-toolbar input[type="text"].tokenist-placeholder::before, 
-.inbox-toolbar .tokenist.tokenist-placeholder::before {
+.inbox-toolbar input[type="text"].tokenist-placeholder:before,
+.inbox-toolbar .tokenist.tokenist-placeholder:before {
   top: 4px !important;
   left: 5px !important;
-}
-
-#avatar-list .user-avatar, 
-#avatar-list .invitation-avatar {
-  width: 2em !important;
-  height: 2em !important;
 }
 
 .inbox-toolbar li.right {
   height: 26px !important;
 }
 
+#avatar-list .user-avatar,
+#avatar-list .invitation-avatar {
+  width: 2em !important;
+  height: 2em !important;
+}
 
+.tag {
+  top: auto !important;
+}
+
+.icon-tag::before {
+  left: auto !important;
+}
+
+.message-actions button,
+.single-message-actions button,
+.message-actions .dropdown,
+.single-message-actions .dropdown {
+  display: block !important;
+}
+
+.dropdown-menu,
+.mentions-dropdown {
+  margin-top: 0 !important;
+}
+
+.dropdown-menu.pull-right,
+.pull-right.mentions-dropdown {
+  right: -9px !important;
+}
+
+/*================*/
 /*main chat styles*/
 
 #chat li[class*="message"] {
@@ -126,7 +150,23 @@
   color: yellowGreen !important;
 }
 
+#chat .chat-message .tag-input,
+.comment-message .tag-input,
+.action-message .tag-input,
+.line-message .tag-input,
+.status-message .tag-input,
+.file-message .tag-input,
+.error-message .tag-input {
+  right: 1em !important;
+}
+
+/*============*/
 /*inbox styles*/
+
+#inbox [class^="icon-"]:before,
+#inbox [class*=" icon-"]:before {
+  vertical-align: baseline !important;
+}
 
 #inbox #filters {
   top: 3.615em !important;
@@ -186,6 +226,21 @@
   max-height: none !important;
 }
 
+#inbox > .indicators .more-messages.above {
+  top: 85px !important;
+}
+
+#inbox ul.tags.clean {
+  display: block !important;
+}
+
+#inbox .inbox-message .tag-input,
+.info-message .tag-input,
+.single-message .tag-input {
+  right: 1px !important;
+}
+
+/*==============*/
 /*single message*/
 
 #single .single-view-content {
@@ -265,10 +320,11 @@
   padding: 0 1em 1em !important;
 }
 
-#inbox > .indicators .more-messages.above {
-  top: 85px !important;
+#single ul.tags {
+  display: block !important;
 }
 
+/*================*/
 /*user list styles*/
 
 #user-list {
@@ -299,4 +355,4 @@
 
 #user-list #invite-button {
   margin-top: 1em !important;
-} 
+}
