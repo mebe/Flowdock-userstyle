@@ -1,4 +1,4 @@
-Flowdock-s-userstyle
+Flowdock-userstyle
 ====================
 
 Pretty userstyle.css for Flowdock app
