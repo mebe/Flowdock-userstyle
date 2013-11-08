@@ -29,7 +29,10 @@
   padding: 1em 1px !important;
 }
 
-.chat-message-list,
+.chat-message-list {
+  top: 0 !important;
+}
+
 .inbox-message-list {
   top: 3.5em !important;
 }
@@ -43,6 +46,11 @@
   height: 46px !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
+}
+
+menu#users {
+  display: none !important;
+  height: 0px !important;
 }
 
 .chat-toolbar > ul.online {
@@ -113,11 +121,12 @@
 /*main chat styles*/
 
 #chat li[class*="message"] {
-  padding-top: 0.3em !important;
-  padding-bottom: 0.3em !important;
+  padding-top: 0.1em !important;
+  padding-bottom: 0.1em !important;
   padding-left: 2.5em !important;
   font-size: 13px !important;
   line-height: 16px !important;
+  border-style: inherit !important;
 }
 
 #chat li[class*="message"].external,
@@ -149,6 +158,37 @@
 #chat li.me[class*="message"] .message-author {
   color: yellowGreen !important;
 }
+
+#chat li[class*="message"] .message-author {
+  float: left !important;
+  position: relative !important;
+  left: 2.5em !important;
+  display: block !important;
+  visibility: visible !important;
+  width: 3.5em !important;
+  margin-right: 0 !important;
+}
+
+#chat li[class*="message"] time.timestamp {
+  visibility: visible !important;
+  float: left;
+  position: inherit !important;
+  right: 0 !important;
+  font-size: inherit !important;
+  left: -4.5em !important;  
+}
+
+/*
+#chat li[class*="message"] time.timestamp:before {
+  content: "[";
+  font-size: 11px;
+}
+
+#chat li[class*="message"] time.timestamp:after {
+  content: "]";
+  font-size: 11px;
+}
+*/
 
 #chat .chat-message .tag-input,
 .comment-message .tag-input,
@@ -238,6 +278,10 @@
 .info-message .tag-input,
 .single-message .tag-input {
   right: 1px !important;
+}
+
+.inbox-panel {
+  float: right !important;
 }
 
 /*==============*/
