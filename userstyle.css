@@ -161,21 +161,23 @@ menu#users {
 
 #chat li[class*="message"] .message-author {
   float: left !important;
-  position: relative !important;
-  left: 2.5em !important;
-  display: block !important;
+  position: inherit !important;
+  left: 2.75em !important;
   visibility: visible !important;
-  width: 3.5em !important;
   margin-right: 0 !important;
+  display: inherit !important;
 }
 
 #chat li[class*="message"] time.timestamp {
   visibility: visible !important;
-  float: left;
-  position: inherit !important;
-  right: 0 !important;
   font-size: inherit !important;
-  left: -4.5em !important;  
+  margin-left: -6.5em !important;
+  position: inherit !important;
+  float: left !important;
+}
+
+#chat li[class*="message"] div.content {
+  padding-left: 1.25em;
 }
 
 /*
